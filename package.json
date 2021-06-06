@@ -1,0 +1,22 @@
+{
+  "name": "softsolutions-main",
+  "version": "1.0.0",
+  "description": "SoftSolution official website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ammar-Abid92/SoftSolutions.git"
+  },
+  "author": "SoftSol inc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ammar-Abid92/SoftSolutions/issues"
+  },
+  "homepage": "https://github.com/Ammar-Abid92/SoftSolutions#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
