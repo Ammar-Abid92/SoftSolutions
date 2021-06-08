@@ -7,6 +7,8 @@
 body {
     background-color: #fff;
     overflow-x: hidden;
+    
+    
 }
 .heading{
     color: ivory;
@@ -53,21 +55,42 @@ p {
 }
 
 .big-heading {
+   
     font-weight: normal;
     padding-top: 200px;
     padding-left: 600px;
     padding-right: 100px;
 }
 
+
 .tagline {
-    padding-right: 100px;
+    margin-left:68%;
+    font-weight: bolder;
+    padding-right: 10%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s steps(41) infinite alternate-reverse;
+    border-right: 3px solid #1f2833;
+    
 }
-
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 40ch;
+    }
+}
 .hire-us-button {
     margin-right: 100px;
     position: relative;
+    
+}
+.button{
+    color: white;
 }
 
 .container-fluid {
@@ -104,6 +127,12 @@ p {
 .cards {
     margin: 2rem 3rem 5rem;
     text-align: center;
+    border: 2px solid #1F2833;
+    
+}
+.cards :hover{
+    color: #45A29E;
+    transition:ease-in-out
 }
 
 .card-text {
@@ -166,8 +195,18 @@ p {
 }
 
 
+
 /* Portfolio Section */
 
+.d-block,.w-100{
+    border-radius: 50px;
+    width: 100%;
+    height: 110%;
+   
+}
+.d-block,.w-100 :hover{
+    transform: scale(0.9);
+}
 #portfolio h1 {
     font-weight: 800;
 }
