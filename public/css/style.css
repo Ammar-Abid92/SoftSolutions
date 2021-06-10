@@ -24,9 +24,11 @@ a {
 }
 
 p {
-    color: #c5c6c7;
+    color: #1f2833;
 }
-
+.col{
+    color: aliceblue;
+}
 /* Navbar */
 
 #title {
@@ -74,6 +76,7 @@ p {
     white-space: nowrap;
     animation: text 6s steps(41) infinite alternate-reverse;
     border-right: 3px solid #1f2833;
+    color: aliceblue;
     
 }
 @keyframes text{
@@ -128,12 +131,9 @@ p {
     margin: 2rem 3rem 5rem;
     text-align: center;
     border: 2px solid #1F2833;
-    
+    color: #1f2833;
 }
-.cards :hover{
-    color: #45A29E;
-    transition:ease-in-out
-}
+
 
 .card-text {
     line-height: 1.5rem;

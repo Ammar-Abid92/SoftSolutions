@@ -37,6 +37,9 @@
       data-auto-replace-svg="nest"
     ></script>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
     <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
   </head>
   <body>
@@ -300,21 +303,21 @@
           </div>
         </div>
         <div class="contactForm">
-          <form method="POST">
+          <form >
             <h2>Send Message</h2>
             <div class="inputBox">
-              <input type="text" name="namefield" placeholder="Full Name" required="required" />
+              <input id="name_" type="text" name="namefield" placeholder="Full Name" required="required" />
               <!-- <span>Full Name</span> -->
             </div>
             <div class="inputBox">
-              <input type="text" name="emailfield" placeholder="Email" required="required" />
+              <input id="email_" type="text" name="emailfield" placeholder="Email" required="required" />
               <!-- <span>Email</span> -->
               <div class="inputBox">
-                <input type="text" name="messagefield" placeholder="Your Message" required="required" />
+                <input id="sms_" type="text" name="messagefield" placeholder="Your Message" required="required" />
                 <!-- <span>Your Message</span> -->
               </div>
               <div class="inputBox">
-                <input type="submit" value="Send" />
+                <input id="saveButton" type="submit" value="Send" />
               </div>
             </div>
           </form>
@@ -334,8 +337,6 @@
     </section>
 
 
-    <script src="/js/anime.min.js"></script>
-    <script src="/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -345,6 +346,36 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+<script>
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAle19GDBLtHEOwfhRQHYN3NqyP6a-bvK4",
+  authDomain: "softsolution01.firebaseapp.com",
+  projectId: "softsolution01",
+  storageBucket: "softsolution01.appspot.com",
+  messagingSenderId: "768952782261",
+  appId: "1:768952782261:web:c1e96e882bc4979ba09dfc",
+  measurementId: "G-VHL81WYQC3"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+</script>
+
+<script src="/js/anime.min.js"></script>
+<script src="/js/index.js"></script>
   </body>
  
 
